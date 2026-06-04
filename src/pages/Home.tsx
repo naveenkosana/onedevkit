@@ -94,7 +94,7 @@ export default function Home() {
       <AdSlotInline className="h-16 mt-10" />
 
       <p className="text-center text-xs mt-4 pb-2" style={{ color: 'var(--text-muted)' }}>
-        Built with ♥ by <span className="text-indigo-400 font-medium">Naveen KK</span>
+        Built with ♥ by <span className="text-indigo-400 font-medium">AnonymousKK</span>
       </p>
     </div>
   )

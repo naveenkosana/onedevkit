@@ -52,7 +52,7 @@ export default function Sidebar() {
         <div>
           <p className="text-[10px]" style={{ color: 'var(--text-muted)' }}>onedevskit.vercel.app</p>
           <p className="text-[10px] mt-0.5" style={{ color: 'var(--text-muted)' }}>
-            Built by <span className="text-indigo-400 font-medium">Naveen KK</span>
+            Built by <span className="text-indigo-400 font-medium">AnonymousKK</span>
           </p>
         </div>
         <button
