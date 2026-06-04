@@ -50,7 +50,7 @@ export default function Sidebar() {
 
       <div className="px-4 pt-3 flex items-center justify-between" style={{ borderTop: '1px solid var(--border-subtle)' }}>
         <div>
-          <p className="text-[10px]" style={{ color: 'var(--text-muted)' }}>onedevkit.vercel.app</p>
+          <p className="text-[10px]" style={{ color: 'var(--text-muted)' }}>onedevskit.vercel.app</p>
           <p className="text-[10px] mt-0.5" style={{ color: 'var(--text-muted)' }}>
             Built by <span className="text-indigo-400 font-medium">Naveen KK</span>
           </p>
