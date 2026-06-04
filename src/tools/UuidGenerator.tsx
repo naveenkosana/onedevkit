@@ -27,9 +27,6 @@ export default function UuidGenerator() {
     setUuids(Array.from({ length: count }, uuidv4))
   }
 
-  function copyAll() {
-    navigator.clipboard.writeText(uuids.map(transform).join('\n'))
-  }
 
   return (
     <ToolShell title="UUID Generator" description="Generate one or multiple v4 UUIDs">
