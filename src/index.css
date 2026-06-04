@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Dark theme (default) */
+:root {
+  --bg-base:       linear-gradient(145deg, #0d0f1e 0%, #0a0d16 40%, #090e1a 100%);
+  --bg-sidebar:    rgba(10, 12, 20, 0.80);
+  --bg-surface:    #0a0c10;
+  --bg-card:       #13151c;
+  --bg-card-hover: #1a1c26;
+  --bg-input:      #0a0c10;
+  --border:        rgba(255,255,255,0.07);
+  --border-subtle: rgba(255,255,255,0.10);
+  --text-primary:  #f1f5f9;
+  --text-secondary:#94a3b8;
+  --text-muted:    #6b7280;
+  --text-label:    #8b95a8;
+  --ad-bg:         rgba(255,255,255,0.05);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-base:       linear-gradient(145deg, #eef2ff 0%, #f5f0ff 50%, #e8f4ff 100%);
+  --bg-sidebar:    rgba(255, 255, 255, 0.80);
+  --bg-surface:    #ffffff;
+  --bg-card:       #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-input:      #f8fafc;
+  --border:        rgba(0,0,0,0.08);
+  --border-subtle: rgba(0,0,0,0.12);
+  --text-primary:  #0f172a;
+  --text-secondary:#475569;
+  --text-muted:    #64748b;
+  --text-label:    #64748b;
+  --ad-bg:         rgba(0,0,0,0.04);
+}
+
+/* Light mode overrides for tool pages (avoids touching every tool file) */
+[data-theme="light"] .bg-\[\#0a0c10\],
+[data-theme="light"] .bg-\[\#13151c\],
+[data-theme="light"] .bg-\[\#1a1c26\],
+[data-theme="light"] .bg-\[\#1f2028\] { background: #f8fafc !important; }
+
+[data-theme="light"] .bg-slate-800 { background: #e2e8f0 !important; }
+[data-theme="light"] .bg-slate-700 { background: #cbd5e1 !important; }
+
+[data-theme="light"] .border-white\/10,
+[data-theme="light"] .border-white\/\[0\.07\] { border-color: rgba(0,0,0,0.1) !important; }
+
+[data-theme="light"] .text-slate-200 { color: #1e293b !important; }
+[data-theme="light"] .text-slate-300 { color: #334155 !important; }
+[data-theme="light"] .text-slate-400 { color: #475569 !important; }
+[data-theme="light"] .text-slate-500 { color: #64748b !important; }
+[data-theme="light"] .text-slate-600 { color: #94a3b8 !important; }
+
+[data-theme="light"] .text-green-300 { color: #15803d !important; }
+[data-theme="light"] .text-indigo-300 { color: #4338ca !important; }
+[data-theme="light"] .text-yellow-200 { color: #92400e !important; }
+[data-theme="light"] .text-red-400    { color: #dc2626 !important; }
+[data-theme="light"] .text-green-400  { color: #16a34a !important; }
+
+[data-theme="light"] .bg-red-950\/30    { background: #fee2e2 !important; }
+[data-theme="light"] .bg-green-950\/30  { background: #dcfce7 !important; }
+[data-theme="light"] .bg-indigo-500\/10 { background: #eef2ff !important; }
+[data-theme="light"] .bg-yellow-400\/10 { background: #fef9c3 !important; }
+[data-theme="light"] .border-red-500\/30   { border-color: #fca5a5 !important; }
+[data-theme="light"] .border-green-500\/30 { border-color: #86efac !important; }
+
+/* Gradient orbs */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.45;
+  transition: opacity 0.3s;
+}
+
+.orb-1 {
+  width: 700px;
+  height: 700px;
+  top: -200px;
+  left: -120px;
+  background: radial-gradient(circle, #4338ca 0%, transparent 65%);
+}
+
+.orb-2 {
+  width: 600px;
+  height: 600px;
+  bottom: -150px;
+  right: -100px;
+  background: radial-gradient(circle, #0284c7 0%, transparent 65%);
+}
+
+.orb-3 {
+  width: 450px;
+  height: 450px;
+  top: 38%;
+  left: 38%;
+  background: radial-gradient(circle, #7c3aed 0%, transparent 65%);
+  opacity: 0.22;
+}
+
+[data-theme="light"] .orb { opacity: 0.20; }
+[data-theme="light"] .orb-3 { opacity: 0.10; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg-base);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  transition: color 0.15s;
+}
+
+#root { min-height: 100svh; }
+
+textarea, input, select { font-family: inherit; }
