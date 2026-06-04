@@ -14,7 +14,7 @@
 // 4. Uncomment the <ins> blocks in AdSlotInline and AdSlotBottom.
 // ─────────────────────────────────────────────────────────
 
-const PUB_ID = 'ca-pub-XXXXXXXXXXXXXXXX'   // ← your publisher ID
+const PUB_ID = 'ca-pub-7186319685677309'
 const INLINE_SLOT_ID = 'XXXXXXXXXX'        // ← inline ad slot ID
 const LEADERBOARD_SLOT_ID = 'XXXXXXXXXX'   // ← leaderboard slot ID
 
