@@ -18,6 +18,7 @@ import TimezoneDiff from './tools/TimezoneDiff'
 import CronExplainer from './tools/CronExplainer'
 import IpLookup from './tools/IpLookup'
 import CurrencyConverter from './tools/CurrencyConverter'
+import Privacy from './pages/Privacy'
 
 export default function App() {
   const location = useLocation()
@@ -54,6 +55,7 @@ export default function App() {
           <Route path="/cron" element={<CronExplainer />} />
           <Route path="/ip" element={<IpLookup />} />
           <Route path="/currency" element={<CurrencyConverter />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
         </div>
         {/* Ad at the bottom of every page — pushed down by flex-1 above */}

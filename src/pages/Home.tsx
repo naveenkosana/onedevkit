@@ -95,6 +95,8 @@ export default function Home() {
 
       <p className="text-center text-xs mt-4 pb-2" style={{ color: 'var(--text-muted)' }}>
         Built with ♥ by <span className="text-indigo-400 font-medium">AnonymousKK</span>
+        {' · '}
+        <NavLink to="/privacy" className="text-indigo-400 hover:underline">Privacy Policy</NavLink>
       </p>
     </div>
   )

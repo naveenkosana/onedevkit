@@ -54,6 +54,7 @@ export default function Sidebar() {
           <p className="text-[10px] mt-0.5" style={{ color: 'var(--text-muted)' }}>
             Built by <span className="text-indigo-400 font-medium">AnonymousKK</span>
           </p>
+          <NavLink to="/privacy" className="text-[10px] text-indigo-400 hover:underline">Privacy Policy</NavLink>
         </div>
         <button
           onClick={toggle}
